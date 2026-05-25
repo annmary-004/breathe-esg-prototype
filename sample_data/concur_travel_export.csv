@@ -1,0 +1,5 @@
+expense_id,employee_region,expense_type,trip_start,trip_end,origin_airport,destination_airport,distance_km,nights,vendor,currency,amount
+TR-9001,IN,Flight,2026-02-04,2026-02-04,BLR,SIN,3180,,Singapore Airlines,INR,64200
+TR-9002,DE,Hotel,2026-02-04,2026-02-07,,, ,3,Marina Bay Hotel,EUR,690
+TR-9003,IN,Taxi,2026-02-08,2026-02-08,,,42,,Uber,INR,2100
+TR-9004,IN,Flight,2026-02-20,2026-02-20,BLR,JFK,,,United,INR,138000
