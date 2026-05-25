@@ -1,10 +1,10 @@
-services:
+﻿services:
   - type: web
     name: breathe-esg-prototype
     env: python
     plan: free
     buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput && python manage.py migrate"
-    startCommand: "gunicorn breathe.wsgi:application"
+    startCommand: "python manage.py migrate --noinput && gunicorn breathe.wsgi:application"
     envVars:
       - key: DEBUG
         value: "0"
@@ -12,3 +12,4 @@ services:
         generateValue: true
       - key: ALLOWED_HOSTS
         value: "*"
+
